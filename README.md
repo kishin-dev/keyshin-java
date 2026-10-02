@@ -2,7 +2,15 @@
 
 Java 17+ client for [KeyShin](https://github.com/kishin-dev/KeyShin) license validation. No dependencies.
 
-## Install (Maven, via JitPack)
+## Installation
+
+[![](https://jitpack.io/v/kishin-dev/keyshin-java.svg)](https://jitpack.io/#kishin-dev/keyshin-java)
+
+Requires Java 17+.
+
+### Maven
+
+Add the JitPack repository to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -11,15 +19,59 @@ Java 17+ client for [KeyShin](https://github.com/kishin-dev/KeyShin) license val
         <url>https://jitpack.io</url>
     </repository>
 </repositories>
+```
 
+Then add the dependency:
+
+```xml
 <dependency>
     <groupId>com.github.kishin-dev</groupId>
     <artifactId>keyshin-java</artifactId>
-    <version>cbb5e07afd</version>
+    <version>v1.0.0</version>
 </dependency>
 ```
 
-Gradle: `implementation 'com.github.kishin-dev:keyshin-java:v1.0.0'` with `maven { url 'https://jitpack.io' }`.
+### Gradle (Groovy)
+
+In `settings.gradle`:
+
+```groovy
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+In `build.gradle`:
+
+```groovy
+dependencies {
+    implementation 'com.github.kishin-dev:keyshin-java:v1.0.0'
+}
+```
+
+### Gradle (Kotlin DSL)
+
+In `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+In `build.gradle.kts`:
+
+```kotlin
+dependencies {
+    implementation("com.github.kishin-dev:keyshin-java:v1.0.0")
+}
+```
 
 ## Usage
 
