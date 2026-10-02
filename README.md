@@ -15,7 +15,7 @@ Java 17+ client for [KeyShin](https://github.com/kishin-dev/KeyShin) license val
 <dependency>
     <groupId>com.github.kishin-dev</groupId>
     <artifactId>keyshin-java</artifactId>
-    <version>v1.0.0</version>
+    <version>cbb5e07afd</version>
 </dependency>
 ```
 
